@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -19,8 +19,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Poppins", sans-serif;
-  --second-font: "Pacifico", cursive;
+  --body-font: "Nunito Sans", sans-serif;
   --biggest-font-size: 2.75rem;
   --big-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
@@ -70,6 +69,8 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--white-color);
   color: var(--text-color);
+  transition: all 0.25s ease-out;
+  animation-duration: 0.3s;
 }
 
 ul {
@@ -221,6 +222,7 @@ img {
   background: linear-gradient(180deg, 
               var(--first-color) 0%,
               var(--first-color-alt) 100%);
+  padding: 100px 0;            
 }
 
 .home__container {
@@ -268,6 +270,11 @@ img {
 
 .home__img {
   width: 320px;
+  max-width: 420px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
   justify-self: center;
 }
 
@@ -513,6 +520,7 @@ img {
 
 .process__header h1 {
   font-size: 44px;
+  line-height: 1.2;
   letter-spacing: 1px;
   margin-bottom: 15px;
   font-weight: 600;
@@ -596,6 +604,30 @@ flex-direction: row-reverse;
     max-width: 100%;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .process {
+    padding: 60px 20px;
+  }
+
+  .process__header {
+    padding: 25px 20px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+  }
+
+  .process__header h1 {
+    font-size: 28px;
+    letter-spacing: 0;
+  }
+
+  .process__header p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+}
+
 
 /*=============== TESTIMONIAL ===============*/
 .testimonial {
@@ -724,7 +756,7 @@ flex-direction: row-reverse;
 
 /*=============== FOOTER ===============*/
 .footer {
-  background-color: var(--white-color);
+  background-color: var(--first-color-alt);
   position: relative;
 }
 
