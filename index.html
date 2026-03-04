@@ -3,6 +3,10 @@
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="assets/img/headpic.png" type="image/x-icon">
@@ -16,7 +20,7 @@
         <title>Loro Coffee</title>
     </head>
     <body>
-        <!--==================== HEADER ====================-->
+        <!--==================== HEADER ====================-
         <header class="header" id="header">
             <div class="header__border"></div>
 
@@ -60,12 +64,45 @@
                     </ul>
                 </div>
             </nav>
-        </header>
+        </header> -->
+        <header class="header" id="header">
+            <nav class="nav container">
+             <a href="#" class="nav__logo">
+               <img src="assets/img/headpic.png" alt="logo">
+               <span>LORO COFFEE</span>
+             </a>
+             <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                <li class="nav__item">
+                 <a href="#home" class="nav__link active-link">Home</a>
+                </li>
+                <li class="nav__item">
+                 <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                 <a href="#steps" class="nav__link">Process</a>
+                </li>
+                <li class="nav__item">
+                 <a href="#testimonial" class="nav__link">Testimonials</a>
+                </li>
+                </ul>
+                </div>
+                 <a href="mailto:lorocoffeefarms@gmail.com" class="nav__cta">Order Now</a>
+                 <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script src="assets/js/main.js"></script>
+        </header> 
+          
+        
+
 
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
-            <section class="home section" id="home">
+            <!--<section class="home section" id="home">
                 <div class="home__container container grid">
                     <div class="home__data">
                         <h3 class="home__subtitle">
@@ -93,7 +130,34 @@
 
                     <img src="assets/img/pp6.jpeg" alt="home image" class="home__img">
                 </div>
+            </section>-->
+            <section class="home" id="home">
+                <div class="home__container container">
+                    <div class="home__content">
+                        <p class="home__label">— Grown in Uganda, Loved Worldwide</p>
+                        <h1 class="home__title">
+                          Coffee Worth<br><em>Waking Up For.</em>
+                        </h1>
+                        <p class="home__description">
+                          Single-origin Robusta from the highlands of Loro — farmed with care,
+                          roasted with precision, delivered to the world.
+                        </p>
+                        <div class="home__buttons">
+                          <a href="#about" class="home__btn-primary">Discover Our Coffee</a>
+                          <a href="#steps" class="home__btn-secondary">Our Process →</a>
+                       </div>
+                       <div class="home__badges">
+                         <div class="home__badge">🌱 100% Organic</div>
+                         <div class="home__badge">🇺🇬 Uganda Origin</div>
+                         <div class="home__badge">✈️ Export Ready</div>
+                       </div>
+                       </div>
+                    <div class="home__image">
+                         <img src="assets/img/pp6.jpeg" alt="Loro Coffee" fetchpriority="high">
+                    </div>
+                </div>
             </section>
+            
 
             <!--==================== PRODUCTS ====================-->
             <section class="products">
@@ -112,7 +176,7 @@
 
                         <div class="products__content">
                             <article class="products__card">
-                                <img src="assets/img/newlorop1.png" alt="products image" class="products__img">
+                                <img src="assets/img/newlorop1.png" alt="products image" class="products__img" ... loading="lazy">
                                 <h3 class="products__name">Organic Robusta Coffee</h3>
                                 <p>Premium locally grown organic Robusta coffee cultivated using sustainable farming techniques</p>
                                 <!--<span class="products__price">$10</span>-->
@@ -265,7 +329,7 @@
 
             <!--STEP. 2------>    
                 <div class="process__step reverse">
-                    <div class="process__imagine">
+                    <div class="process__image">
                         <img src="assets/img/manu2.jpeg" alt="Harvesting Coffee">
                     </div>
                     <div class="process__content">
@@ -419,7 +483,7 @@
         </section>
 
 
-        <!--==================== FOOTER ====================-->
+        <!--==================== FOOTER ====================--
         <footer class="footer">
             <div class="footer__bg">
                 <img src="assets/img/coffee-beans-bg.png" alt="footer image" class="footer__bg-img">
@@ -449,7 +513,7 @@
                                 <a href="#" class="footer__privacy">Privacy Policy</a>
                             </p>
                         </form>
-                    </div>-->
+                    </div>--
 
                     <div class="footer__contact">
                         <h3>||||||||||||||||||||</h3>
@@ -483,7 +547,48 @@
                     </div>
                 </div>
             </div>
-        </footer> 
+        </footer> -> -->
+
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                    <img src="assets/img/headpic.png" alt="Loro Coffee logo">
+                    <span>LORO COFFEE</span>
+                    </a>
+                    <p class="footer__tagline">From Farm to Cup — Uganda's finest Robusta, grown with purpose.</p>
+                    <a href="https://wa.me/+256776432810" class="footer__whatsapp" target="_blank">
+                      💬 Chat on WhatsApp
+                    </a>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__heading">Navigate</h4>
+                    <ul class="footer__links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#steps">Our Process</a></li>
+                    <li><a href="#testimonial">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__heading">Contact</h4>
+                    <ul class="footer__contact">
+                    <li>📍 Loro Town Council, Oyam District</li>
+                    <li>✉️ <a href="mailto:lorocoffeefarms@gmail.com">lorocoffeefarms@gmail.com</a></li>
+                    <li>📞 <a href="tel:+256712465060">+256 712 465 060</a></li>
+                    <li>📞 <a href="tel:+256703181093">+256 703 181 093</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>© 2018–2026 Loro Coffee. All rights reserved.</p>
+                <p>Proudly grown in Uganda 🇺🇬</p>
+            </div>
+        </footer>
 
         <!--========== SCROLL UP ==========-->
         <a href="#" class="scrollup" id="scroll-up">
